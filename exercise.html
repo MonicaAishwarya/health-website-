@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Healthy Life - Exercises</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f4f8f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #58b368;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    .exercise-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    .exercise-card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      max-width: 300px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .exercise-card:hover {
+      transform: scale(1.03);
+    }
+
+    .exercise-card h2 {
+      color: #2f855a;
+      font-size: 1.5rem;
+    }
+
+    .exercise-card p {
+      font-size: 1rem;
+      margin: 1rem 0;
+    }
+
+    .exercise-card button {
+      background-color: #2f855a;
+      color: white;
+      border: none;
+      padding: 0.7rem 1.2rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .exercise-card button:hover {
+      background-color: #276749;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #e2e8f0;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Daily Exercise Routines</h1>
+    <p>Stay fit and active with simple daily exercises</p>
+  </header>
+
+  <section class="exercise-list">
+    <div class="exercise-card">
+      <h2>Morning Yoga</h2>
+      <img src="yoga.jpg" width="50%" height="50%">
+      <p>Start your day with gentle stretching and breathing exercises.</p>
+      <button>View Routine</button>
+    </div>
+
+    <div class="exercise-card">
+      <h2>Cardio Blast</h2>
+      <img src="gym.jpg" width="50%" height="50%">
+      <p>High-energy moves to get your heart pumping in just 20 minutes.</p>
+      <button>Start Workout</button>
+    </div>
+
+    <div class="exercise-card">
+      <h2>Strength Training</h2>
+      <img src="cardio.jpg" width="50%" height="50%">
+      <p>Build muscle and tone with bodyweight and light dumbbell exercises.</p>
+      <button>View Exercises</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Healthy Life. Stay Strong, Stay Healthy!</p>
+  </footer>
+</body>
+</html>

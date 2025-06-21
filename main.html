@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HealthyLife Style</title>
+  <link href="https://fonts.googleapis.com/css2?family=Zina&display=swap" rel="stylesheet" />
+
+  <style>
+    .container {
+      animation: tracking-in-contract-bck 1s ease both;
+    }
+
+    @keyframes tracking-in-contract-bck {
+      0% {
+        letter-spacing: 1em;
+        transform: translateZ(400px);
+        opacity: 0;
+      }
+      40% {
+        opacity: 0.6;
+      }
+      100% {
+        transform: translateZ(0);
+        opacity: 1;
+      }
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: rgba(0, 0, 0, 0.4);
+      font-family: 'Zina', serif;
+      font-size: x-large;
+      color: whitesmoke;
+      text-align: center;
+    }
+
+    h1, h2 {
+      margin: 0.2em;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      font-size: 1rem;
+      font-family: 'Zina', serif;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="container">WELCOME TO THE WORLD OF</h1>
+  <h2 id="subtitle" class="container">HEALTHYLIFE STYLE</h2>
+  <button id="startBtn" class="container">Start Now</button>
+  <script>
+    document.getElementById("startBtn").onclick = function () {
+      document.getElementById("subtitle").textContent = "Let's begin your journey!";
+      this.textContent = "Loading...";
+      setTimeout(function () {
+        window.location.href = "start.html"; 
+      }, 2000); 
+    };
+  </script>
+
+</body>
+</html>

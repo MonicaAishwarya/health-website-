@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Healthy Recipes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      background-color: #2a9d8f;
+      color: white;
+      padding: 20px 0;
+      margin: 0;
+    }
+
+    .filter {
+      text-align: center;
+      margin: 20px;
+    }
+
+    .recipes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .recipe {
+      background-color: white;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .recipe:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .recipe img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .recipe h3 {
+      margin: 10px 0 5px;
+      color: #264653;
+    }
+
+    .recipe p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .highlight {
+      border: 2px solid #2a9d8f;
+      background-color: #e0f7f4;
+    }
+
+    @media screen and (max-width: 600px) {
+      .recipes {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Healthy Recipes</h1>
+
+  <div class="filter">
+    <label for="search">Filter Recipes:</label>
+    <input type="text" id="search" placeholder="e.g., smoothie" />
+    <button onclick="filterRecipes()">Search</button>
+  </div>
+
+  <div class="recipes" id="recipeList">
+    <div class="recipe">
+      <img src="green salad.jpg" alt="Salad">
+      <h3>Green Salad</h3>
+      <p>Fresh vegetables with olive oil and lemon. Perfect for detox.</p>
+      <button onclick="highlightRecipe(this)">Highlight</button>
+    </div>
+
+    <div class="recipe">
+      <img src="smoothie.avif" alt="Smoothie">
+      <h3>Fruit Smoothie</h3>
+      <p>Blend of banana, berries, and yogurt. Great for breakfast!</p>
+      <button onclick="highlightRecipe(this)">Highlight</button>
+    </div>
+
+    <div class="recipe">
+      <img src="soup.jpg" alt="Veg Soup">
+      <h3>Veggie Soup</h3>
+      <p>Hot, light, and full of seasonal vegetables and herbs.</p>
+      <button onclick="highlightRecipe(this)">Highlight</button>
+    </div>
+
+    <div class="recipe">
+      <img src="oats.jpg" alt="Oats">
+      <h3>Oats Bowl</h3>
+      <p>Oats with milk, nuts, and fruits — a healthy way to start the day.</p>
+      <button onclick="highlightRecipe(this)">Highlight</button>
+    </div>
+  </div>
+
+  <script>
+    window.onload = function () {
+      alert("Welcome to Healthy Recipes! Enjoy browsing 😊");
+    };
+    function filterRecipes() {
+      const keyword = document.getElementById('search').value.toLowerCase();
+      const recipes = document.querySelectorAll('.recipe');
+      recipes.forEach(recipe => {
+        const title = recipe.querySelector('h3').textContent.toLowerCase();
+        if (title.includes(keyword)) {
+          recipe.style.display = "block";
+        } else {
+          recipe.style.display = "none";
+        }
+      });
+    }
+    function highlightRecipe(button) {
+      const recipe = button.closest('.recipe');
+      recipe.classList.toggle('highlight');
+    }
+  </script>
+</body>
+</html>

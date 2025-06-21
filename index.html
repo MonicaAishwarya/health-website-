@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HealthyLife</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      background: #f8f8f8;
+    }
+
+    .logo {
+      font-size: 24px;
+      color: #1b5e20;
+      font-weight: bold;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #000;
+    }
+
+    .btn {
+      background: orange;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 4px;
+    }
+
+    .web-wrapper {
+      height: 400px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .web {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("life.jpg") no-repeat center ;
+      background-size: cover;
+      background-position:top;
+      z-index: 0;
+      animation: kenburns-top 8s ease-out forwards;
+    }
+
+    @keyframes kenburns-top {
+      0% {
+        transform: scale(1) translateY(0);
+        transform-origin: 50% 16%;
+      }
+      100% {
+        transform: scale(1.25) translateY(-15px);
+        transform-origin: top;
+      }
+    }
+
+    .web-content {
+      position: relative;
+      z-index: 1;
+      width: 470px;
+      height: 200px;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      color: white;
+      top: 100px;
+      left: 20px;
+    }
+
+    .web-content h1 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    .web-content p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      padding: 40px 20px;
+      background: #f4f4f4;
+    }
+
+    .box {
+      width: 30%;
+    }
+
+    .box h3 {
+      color: #264653;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #264653;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">HealthyLife</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="tips.html">Tips</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="exercise.html">Fitness</a>
+      
+    </nav>
+  </header>
+
+  <div class="web-wrapper">
+    <div class="web"></div> 
+    <div class="web-content"> 
+      <h1>Live Healthy, <br>Feel Happy</h1>
+      <p>Simple steps to improve your mind and body.</p>
+    </div>
+  </div>
+
+  <section class="features">
+    <div class="box">
+      <h3>Nutrition</h3>
+      <p>Healthy food ideas.</p>
+    </div>
+    <div class="box">
+      <h3>Fitness</h3>
+      <p>Daily exercise tips.</p>
+    </div>
+    <div class="box">
+      <h3>Mindfulness</h3>
+      <p>Relax and focus better.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HealthyLife. Stay Balanced.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wellness Tips Carousel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Roboto&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: #eafaf1;
+      padding-top: 50px;
+      padding-bottom: 200px;
+    }
+
+    h1 {
+      color: #264653;
+      font-weight: 600;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .tip-box {
+      background-color: #ffffff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-left: 5px solid #2a9d8f;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .tip-box img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+    }
+
+    .tip-box h3 {
+      color: #2a9d8f;
+      margin-top: 0;
+      font-weight: 600;
+    }
+
+    .tip-box p {
+      color: #444;
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+
+    .carousel-item {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    .carousel-item h3 {
+      color: #2a9d8f;
+      font-weight: 600;
+    }
+
+    .carousel-item p {
+      color: #555;
+      font-size: 1.1rem;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: #2a9d8f;
+    }
+
+    .fixed-carousel {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      background-color: white;
+      padding: 10px 0;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+      z-index: 999;
+    }
+
+    .carousel-inner img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="text-center mb-4">Top Wellness Tips</h1>
+
+  <div class="container">
+    <div class="tip-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/2965/2965567.png" alt="Water Icon">
+      <div>
+        <h3>1. Start Your Day with Water</h3>
+        <p>Begin your morning with a glass of warm water. It boosts metabolism and hydrates your body.</p>
+      </div>
+    </div>
+
+    <div class="tip-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/135/135620.png" alt="Food Icon">
+      <div>
+        <h3>2. Eat More Whole Foods</h3>
+        <p>Choose fresh fruits, vegetables, whole grains, and lean proteins over processed foods.</p>
+      </div>
+    </div>
+
+    <div class="tip-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/201/201623.png" alt="Exercise Icon">
+      <div>
+        <h3>3. Move Every Day</h3>
+        <p>Include at least 30 minutes of activity — walk, stretch, or dance daily.</p>
+      </div>
+    </div>
+
+    <div class="tip-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/2864/2864447.png" alt="Mindful Icon">
+      <div>
+        <h3>4. Practice Mindful Eating</h3>
+        <p>Eat slowly and avoid distractions to better understand your body's hunger signals.</p>
+      </div>
+    </div>
+
+    <div class="tip-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/3081/3081648.png" alt="Hydration Icon">
+      <div>
+        <h3>5. Stay Hydrated</h3>
+        <p>Aim for 6–8 glasses of water a day. Hydration helps with focus and energy.</p>
+      </div>
+    </div>
+
+    <div class="tip-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/2920/2920285.png" alt="Sleep Icon">
+      <div>
+        <h3>6. Get Enough Sleep</h3>
+        <p>Get 7–9 hours of sleep to let your body recover and strengthen immunity.</p>
+      </div>
+    </div>
+
+    <div class="tip-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/1618/1618245.png" alt="Sugar Icon">
+      <div>
+        <h3>7. Reduce Sugar Intake</h3>
+        <p>Limit sugary snacks and soft drinks. Excess sugar causes fatigue and mood swings.</p>
+      </div>
+    </div>
+
+    <div class="tip-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/3917/3917032.png" alt="Screen Icon">
+      <div>
+        <h3>8. Take Breaks from Screens</h3>
+        <p>Stretch and rest your eyes every hour to improve posture and focus.</p>
+      </div>
+    </div>
+
+    <div class="tip-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/2643/2643423.png" alt="Breathing Icon">
+      <div>
+        <h3>9. Practice Deep Breathing</h3>
+        <p>Breathe deeply for 2 minutes daily. It reduces stress and calms the mind.</p>
+      </div>
+    </div>
+
+    <div class="tip-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Routine Icon">
+      <div>
+        <h3>10. Keep a Positive Routine</h3>
+        <p>Build habits like journaling, walking, or reading to stay consistent and positive.</p>
+      </div>
+    </div>
+  </div>
+  <br>
+<footer>
+  <div class="fixed-carousel">
+    <div id="wellnessCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://cdn-icons-png.flaticon.com/512/3081/3081648.png" alt="Water">
+          <h3>Stay Hydrated</h3>
+          <p>Drink at least 8 glasses of water daily to support vital body functions.</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/201/201623.png" alt="Walk">
+          <h3>Walk Daily</h3>
+          <p>A 30-minute walk boosts mood, energy, and heart health.</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/2643/2643423.png" alt="Breathe">
+          <h3>Mindful Breathing</h3>
+          <p>Just 2 minutes of slow breathing can reduce stress significantly.</p>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#wellnessCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#wellnessCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
