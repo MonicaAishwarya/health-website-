@@ -1,28 +1,79 @@
-The Healthy Lifestyle Website is a responsive web application designed to promote healthy living habits by providing users with information on nutrition, fitness, mental well-being, and daily healthy routines.
-The website offers a clean, user-friendly interface and adapts seamlessly across devices using modern front-end technologies.
+# Healthy Lifestyle Website
+# Project Overview
 
-This project demonstrates the practical use of core web development technologies along with responsive design principles.
+HealthyLife is a simple and user-friendly healthy lifestyle website designed to promote overall well-being. The website focuses on encouraging users to adopt healthier habits through nutrition guidance, fitness tips, and mindfulness practices. It delivers essential information using a clean layout and an engaging visual design.
 
-Responsive and mobile-friendly design
+# Project Objective
 
-Healthy diet and nutrition information
+Promote awareness of healthy living
 
-Exercise and fitness tips
+Encourage balanced nutrition and regular exercise
 
-Mental health and wellness guidance
+Support mental well-being through mindfulness
 
-Interactive UI elements (forms, buttons, animations)
+Provide an easy-to-navigate informational website
 
-Smooth navigation and structured layout
+# Technologies Used
+
+HTML5 – Website structure
+
+CSS3 – Styling, layout, and animations
+
+JavaScript (Optional / Future) – For interactivity
+
+Responsive Design – Optimized for multiple screen sizes
+
+# Project Structure
+healthy-life-website/
+│── index.html
+│── tips.html
+│── recipes.html
+│── exercise.html
+│── life.jpg
+│── README.md
+
+# Features
+
+Clean and minimal UI design
+
+Engaging hero section with animation
+
+Informative sections on nutrition, fitness, and mindfulness
+
+Simple navigation menu
+
+Lightweight and fast-loading pages
+
+# Website Sections
+
+Home – Introduction to healthy living
+
+Tips – Practical lifestyle and wellness tips
+
+Recipes – Healthy and easy-to-make food ideas
+
+Fitness – Daily exercise and fitness guidance
+
+# How to Run the Project
+
+Clone the repository
+
+git clone https://github.com/MonicaAishwarya/healthy-lifestyle-website.git
 
 
+Navigate to the project folder
 
-Technologies Used
+Open index.html in any modern web browser
 
-HTML5 – Structure and content
+# Live Preview
+https://monicaaishwarya.github.io/healthy-lifestyle-website/
 
-CSS3 – Styling and layout
+# Future Enhancements
 
-JavaScript – Interactivity and dynamic behavior
+Add JavaScript-based interactivity
 
-Bootstrap – Responsive design and UI components
+Include BMI or calorie calculator
+
+Improve mobile responsiveness
+
+Add more content pages and images
